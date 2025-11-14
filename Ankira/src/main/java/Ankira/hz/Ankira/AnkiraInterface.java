@@ -28,6 +28,7 @@ public class AnkiraInterface extends Application {
         textField.setPromptText("What do you want play?");
         textField.getStyleClass().add("text-field");
 
+
         Button searchButton = new Button("Search 🔍");
         searchButton.getStyleClass().add("search-Button");
 
