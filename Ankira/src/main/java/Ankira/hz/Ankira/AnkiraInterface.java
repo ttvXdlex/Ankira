@@ -1,18 +1,15 @@
 package Ankira.hz.Ankira;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import javafx.util.Duration;
+
 
 
 public class AnkiraInterface extends Application {
@@ -22,8 +19,10 @@ public class AnkiraInterface extends Application {
         stage.setTitle("Ankira");
         stage.setResizable(false);
 
+
         StackPane root = new StackPane();
         root.setStyle("-fx-background-color: #191919");
+
         TextField textField = new TextField();
         textField.setPromptText("What do you want play?");
         textField.getStyleClass().add("text-field");
@@ -45,6 +44,28 @@ public class AnkiraInterface extends Application {
         vbox.setAlignment(Pos.TOP_CENTER);
 
         root.getChildren().add(vbox);
+        VBox leftmenu = new VBox();
+        leftmenu.setPrefWidth(250);
+        leftmenu.getStyleClass().add("left-menu");
+        leftmenu.setSpacing(30);
+        leftmenu.setAlignment(Pos.TOP_LEFT);
+
+        Button home = new Button("Home");
+        ImageView img = new ImageView(new Image("images/fav.jpg"));
+        img.setFitWidth(32);
+        img.setFitHeight(32);
+        Button favourite = new Button("Favourite", img);
+        favourite.getStyleClass().add("favourite");
+        favourite.setPrefWidth(210);
+        favourite.setPrefHeight(32);
+        favourite.setAlignment(Pos.TOP_LEFT);
+        Button library = new Button("Your Library");
+        leftmenu.getChildren().addAll(home, favourite, library);
+        BorderPane panel = new BorderPane();
+        panel.setLeft(leftmenu);
+        root.getChildren().add(panel);
+
+
 
         Scene scene = new Scene(root, 1200, 760);
 
