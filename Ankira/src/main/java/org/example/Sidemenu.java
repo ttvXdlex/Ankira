@@ -7,26 +7,26 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
-public class Borderpane {
+public class Sidemenu {
     private BorderPane panel;
 
-    public Borderpane() {
+    public Sidemenu() {
         panel = new BorderPane();
-        setupLayout();
+        lmenu();
     }
 
-    private void setupLayout() {
+    private void lmenu() {
         VBox leftmenu = new VBox();
         leftmenu.setPrefWidth(250);
+        leftmenu.setAlignment(Pos.TOP_LEFT);
         leftmenu.getStyleClass().add("left-menu");
         leftmenu.setSpacing(30);
-        leftmenu.setAlignment(Pos.TOP_LEFT);
 
         Button home = new Button("Home");
-        ImageView img = new ImageView(new Image("images/fav.jpg"));
-        img.setFitWidth(32);
-        img.setFitHeight(32);
-        Button favourite = new Button("Favourite", img);
+        ImageView favico = new ImageView(new Image("images/fav.png"));
+        favico.setFitWidth(32);
+        favico.setFitHeight(32);
+        Button favourite = new Button("Favourite", favico);
         favourite.getStyleClass().add("favourite");
         favourite.setPrefWidth(210);
         favourite.setPrefHeight(32);
