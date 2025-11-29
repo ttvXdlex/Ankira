@@ -1,0 +1,29 @@
+.text-field {
+    -fx-background-radius: 20;
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-padding: 10 35;
+}
+.search-Button{
+    -fx-background-radius: 20;
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.search-Button:hover{
+    -fx-background-color: #444444;
+}
+.left-menu{
+    -fx-background-color: #121212;
+}
+
+
+
+.favourite{
+    -fx-background-radius: 5;
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
