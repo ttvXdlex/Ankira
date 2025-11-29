@@ -23,7 +23,7 @@ public class Borderpane {
         leftmenu.setAlignment(Pos.TOP_LEFT);
 
         Button home = new Button("Home");
-        ImageView img = new ImageView(new Image("images/fav.jpg"));
+        ImageView img = new ImageView(new Image("images/fav.png"));
         img.setFitWidth(32);
         img.setFitHeight(32);
         Button favourite = new Button("Favourite", img);
