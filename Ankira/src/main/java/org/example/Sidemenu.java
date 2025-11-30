@@ -15,6 +15,19 @@ public class Sidemenu {
         lmenu();
     }
 
+
+    private Button playlists(String text, String url, String css) {
+        ImageView icon = new ImageView(new Image(url));
+        icon.setFitWidth(32);
+        icon.setFitHeight(32);
+        Button buttonlist = new Button(text, icon);
+        buttonlist.getStyleClass().add(css);
+        buttonlist.setPrefWidth(210);
+        buttonlist.setPrefHeight(32);
+        buttonlist.setAlignment(Pos.TOP_LEFT);
+        return buttonlist;
+    }
+
     private void lmenu() {
         VBox leftmenu = new VBox();
         leftmenu.setPrefWidth(250);
@@ -23,17 +36,11 @@ public class Sidemenu {
         leftmenu.setSpacing(30);
 
         Button home = new Button("Home");
-        ImageView favico = new ImageView(new Image("images/fav.png"));
-        favico.setFitWidth(32);
-        favico.setFitHeight(32);
-        Button favourite = new Button("Favourite", favico);
-        favourite.getStyleClass().add("favourite");
-        favourite.setPrefWidth(210);
-        favourite.setPrefHeight(32);
-        favourite.setAlignment(Pos.TOP_LEFT);
+        Button favourite = playlists("Favourite","images/fav.png","favourite");
+        Button playlist1 = playlists("Playlist1","images/search.png","favourite");
         Button library = new Button("Your Library");
 
-        leftmenu.getChildren().addAll(home, favourite, library);
+        leftmenu.getChildren().addAll(home, favourite, playlist1, library);
         panel.setLeft(leftmenu);
     }
 
