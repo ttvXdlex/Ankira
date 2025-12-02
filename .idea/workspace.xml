@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eec84de5-4528-46b3-875d-216cbf5808d8" name="Changes" comment="Deleted StackPane and fixed left menu + search bar + created class for search bar">
+    <list default="true" id="eec84de5-4528-46b3-875d-216cbf5808d8" name="Changes" comment="Button playlist method :)">
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Playlists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/PlaylistsCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/pl1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/pl2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/AnkiraInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/AnkiraInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Sidemenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Sidemenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ankira/src/main/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/resources/style/style.css" afterDir="false" />
     </list>
@@ -133,7 +143,9 @@
       <option name="presentableId" value="Default" />
       <updated>1764439137067</updated>
       <workItem from="1764439138211" duration="6031000" />
-      <workItem from="1764495510495" duration="2269000" />
+      <workItem from="1764495510495" duration="2646000" />
+      <workItem from="1764628934063" duration="46000" />
+      <workItem from="1764683563403" duration="24368000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted StackPane and fixed left menu + search bar + created class for search bar">
       <option name="closed" value="true" />
@@ -151,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764445324401</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Button playlist method :)">
+      <option name="closed" value="true" />
+      <created>1764497915363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764497915363</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted StackPane and fixed left menu + search bar + created class for search bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted StackPane and fixed left menu + search bar + created class for search bar" />
+    <MESSAGE value="Button playlist method :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Button playlist method :)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ankira$Main.ic" NAME="Main Coverage Results" MODIFIED="1764440422327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

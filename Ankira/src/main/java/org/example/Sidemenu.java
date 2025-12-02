@@ -8,39 +8,49 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
 public class Sidemenu {
+
+    private BorderPane root;//
+    private VBox test3;
+    private VBox librarycontent;
     private BorderPane panel;
 
-    public Sidemenu() {
+    public Sidemenu(BorderPane root, VBox test3, VBox librarycontent) {
+        this.root = root;
+        this.test3 = test3;
+        this.librarycontent = librarycontent;
         panel = new BorderPane();
         lmenu();
     }
 
 
-    private Button playlists(String text, String url, String css) {
-        ImageView icon = new ImageView(new Image(url));
-        icon.setFitWidth(32);
-        icon.setFitHeight(32);
-        Button buttonlist = new Button(text, icon);
-        buttonlist.getStyleClass().add(css);
-        buttonlist.setPrefWidth(210);
-        buttonlist.setPrefHeight(32);
-        buttonlist.setAlignment(Pos.TOP_LEFT);
-        return buttonlist;
-    }
-
     private void lmenu() {
         VBox leftmenu = new VBox();
-        leftmenu.setPrefWidth(250);
+        leftmenu.setPrefWidth(256);
         leftmenu.setAlignment(Pos.TOP_LEFT);
         leftmenu.getStyleClass().add("left-menu");
-        leftmenu.setSpacing(30);
+        leftmenu.setSpacing(15);
 
-        Button home = new Button("Home");
-        Button favourite = playlists("Favourite","images/fav.png","favourite");
-        Button playlist1 = playlists("Playlist1","images/search.png","favourite");
-        Button library = new Button("Your Library");
+        ImageView homei = new ImageView(new Image("images/home.png"));
+        homei.setFitWidth(32);
+        homei.setFitHeight(32);
+        Button home = new Button("", homei);
+        home.getStyleClass().add("buttonslide");
+        home.setOnAction(e -> root.setCenter(test3)); //ну тут по обработки действия он меняет центр
 
-        leftmenu.getChildren().addAll(home, favourite, playlist1, library);
+
+        ImageView libi = new ImageView(new Image("images/library.png"));
+        libi.setFitWidth(32);
+        libi.setFitHeight(32);
+        Button library = new Button("", libi);
+        library.getStyleClass().add("buttonslide");
+        library.setOnAction(e -> root.setCenter(librarycontent)); //ну тут по обработки действия он меняет центр
+
+        Button favourite = PlaylistsCreator.playlistsbtn("Favourite","fav.png","playlist"); //ну вот как работает наш метод для создание кнопочек че
+
+        Button playlist1 = PlaylistsCreator.playlistsbtn("Playlist","pl1.jpg","playlist");
+
+        Button playlist2 = PlaylistsCreator.playlistsbtn("Playlist","pl2.jpg","playlist");
+        leftmenu.getChildren().addAll(home, favourite, playlist1, playlist2, library);
         panel.setLeft(leftmenu);
     }
 

@@ -20,11 +20,30 @@
     -fx-background-color: #121212;
 }
 
-
-
 .playlist{
     -fx-background-radius: 5;
-    -fx-background-color: #2b2b2b;
+    -fx-background-color: #121212;
     -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-family: Calibri Light;
+    -fx-cursor: hand;
+}
+
+
+.blocksong{
+    -fx-background-color: #ffffff;
+    -fx-cursor: hand;
+}
+
+.blocksongtext{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-background-color: black;
+    -fx-background-radius: 5;
+}
+
+
+.buttonslide{
+    -fx-background-color: #000000;
     -fx-cursor: hand;
 }
