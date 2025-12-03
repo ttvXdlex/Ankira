@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eec84de5-4528-46b3-875d-216cbf5808d8" name="Changes" comment="Button playlist method :)">
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Playlists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/PlaylistsCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/library.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/pl1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/pl2.jpg" afterDir="false" />
+    <list default="true" id="eec84de5-4528-46b3-875d-216cbf5808d8" name="Changes" comment="Moved the method for creating playlists to the class. + Added temporary placeholders instead of tracks to the main menu. + Switch between the main page and the library using buttons.">
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/PlaylistStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Playlister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/pause.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/play.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/AnkiraInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/AnkiraInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Playlists.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Playlists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/PlaylistsCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/PlaylistsCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Search.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Sidemenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Sidemenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ankira/src/main/resources/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/resources/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +114,7 @@
       <module name="Ankira_main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.PlaylistNU" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,7 +146,9 @@
       <workItem from="1764439138211" duration="6031000" />
       <workItem from="1764495510495" duration="2646000" />
       <workItem from="1764628934063" duration="46000" />
-      <workItem from="1764683563403" duration="24368000" />
+      <workItem from="1764683563403" duration="24803000" />
+      <workItem from="1764712473439" duration="844000" />
+      <workItem from="1764769233214" duration="8451000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted StackPane and fixed left menu + search bar + created class for search bar">
       <option name="closed" value="true" />
@@ -171,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764497915363</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Moved the method for creating playlists to the class. + Added temporary placeholders instead of tracks to the main menu. + Switch between the main page and the library using buttons.">
+      <option name="closed" value="true" />
+      <created>1764712144112</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764712144112</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +191,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted StackPane and fixed left menu + search bar + created class for search bar" />
     <MESSAGE value="Button playlist method :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Button playlist method :)" />
+    <MESSAGE value="Moved the method for creating playlists to the class. + Added temporary placeholders instead of tracks to the main menu. + Switch between the main page and the library using buttons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the method for creating playlists to the class. + Added temporary placeholders instead of tracks to the main menu. + Switch between the main page and the library using buttons." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ankira$Main.ic" NAME="Main Coverage Results" MODIFIED="1764440422327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

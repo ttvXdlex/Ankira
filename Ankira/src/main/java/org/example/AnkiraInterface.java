@@ -1,13 +1,7 @@
 package org.example;
 
 import javafx.application.Application;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
@@ -24,8 +18,7 @@ public class AnkiraInterface extends Application {
 
         Scene scene = new Scene(root, 1200, 760);
 
-        Library library = new Library(); //короче вот тут вот мы создаем новый обьект из класса либрали
-        VBox librarycontent = library.LibraryContent(); //ну тута саздаем новый вбокс шариш? Юзает метод из класса
+        Library libraryscroll = new Library();
 
 
         Search search = new Search();
@@ -38,7 +31,7 @@ public class AnkiraInterface extends Application {
         // , ну тут типа слой с музыкой если ты не понял но ты понял короче
 
 
-        Sidemenu leftmenu = new Sidemenu(root, test3, librarycontent); //НОВИНКА!!!! Тут короче добавлены приколы которые должны
+        Sidemenu leftmenu = new Sidemenu(root, test3, libraryscroll); //НОВИНКА!!!! Тут короче добавлены приколы которые должны
         //передаться в класс SideMenu, чисто для того шобы работало переключение между Домиком и Библиотекой.
 
 

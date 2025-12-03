@@ -31,7 +31,6 @@
 
 
 .blocksong{
-    -fx-background-color: #ffffff;
     -fx-cursor: hand;
 }
 
@@ -44,6 +43,10 @@
 
 
 .buttonslide{
-    -fx-background-color: #000000;
+    -fx-background-color: #121212;
     -fx-cursor: hand;
+}
+
+.buttoncover{
+    -fx-opacity: 0.5;
 }

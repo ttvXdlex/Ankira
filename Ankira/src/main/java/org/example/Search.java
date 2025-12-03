@@ -10,7 +10,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 public class Search {
-    private BorderPane searchtop;
+    private final BorderPane searchtop;
 
     public Search() {
         searchtop = new BorderPane();
