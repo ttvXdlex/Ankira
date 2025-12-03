@@ -2,11 +2,11 @@ package org.example;
 
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+
 
 public class Sidemenu {
 
@@ -45,13 +45,13 @@ public class Sidemenu {
         Button library = new Button("", libi);
         library.getStyleClass().add("buttonslide");
         library.setOnAction(e -> root.setCenter(libraryscroll.getLibscroller())); //ну тут по обработки действия он меняет центр
-
-        Button favourite = PlaylistsCreator.playlistsbtn("Favourite","fav.png","playlist"); //ну вот как работает наш метод для создание кнопочек че
-
-        Button playlist1 = PlaylistsCreator.playlistsbtn("Playlist","pl1.jpg","playlist");
-
-        Button playlist2 = PlaylistsCreator.playlistsbtn("Playlist","pl2.jpg","playlist");
-        leftmenu.getChildren().addAll(home, library, favourite, playlist1, playlist2);
+        leftmenu.getChildren().addAll(home, library);
+        for (int i = 0; i < Playlists.getPlaylisters().size(); i++) { //ухты это же ЦИИКЛ, который перебирает наш список
+            PlaylistStorage playlist = Playlists.getPlaylisters().get(i);
+            Button playlistbox = PlaylistsCreator.playlistsbtn(playlist.text, playlist.url);//вот тута мы создаем кнопку и
+            // из списка название и картинку берем для кнопки
+            leftmenu.getChildren().add(playlistbox); //ну и добавляет что выходит на выходе в левое меню
+        }
         panel.setLeft(leftmenu);
     }
 

@@ -18,6 +18,8 @@ public class AnkiraInterface extends Application {
 
         Scene scene = new Scene(root, 1200, 760);
 
+
+
         Library libraryscroll = new Library();
 
 
