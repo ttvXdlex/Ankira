@@ -11,8 +11,10 @@ import javafx.scene.layout.VBox;
 
 public class Search {
     private final BorderPane searchtop;
+    private final SongsMain songsMain;
 
-    public Search() {
+    public Search(SongsMain songsMain) {
+        this.songsMain = songsMain;
         searchtop = new BorderPane();
         search();
     }
@@ -28,6 +30,11 @@ public class Search {
         Button searchButton = new Button("",searchimg);
         searchButton.getStyleClass().add("search-Button");
 
+        searchButton.setOnAction(e -> {
+            String searching = textField.getText();
+            songsMain.searchupdated(searching);
+        }); //Тут при нажатии на кнопку поиска, создается перемена, которой задается то, что было вписано вполе, после чего через метод в сонг мэин проверяется задавая ему эту переменную
+        //ну типа дальше в сонг мэин чекниш емае
 
         HBox text = new HBox(0, textField, searchButton);
         text.setAlignment(Pos.CENTER); // выравниваем элементы HBox по центру

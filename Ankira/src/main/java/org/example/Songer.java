@@ -11,7 +11,7 @@ import javafx.scene.layout.VBox;
 public class Songer {
 
     public static VBox songscreat(String name, String artist, String cover){
-        Label songname = new Label(name + " - " + artist); //лейбл типа текст
+        Label songname = new Label(name + " : " + artist); //лейбл типа текст
         songname.getStyleClass().add("blocksongtext");
         songname.setPrefWidth(200);
         songname.setAlignment(Pos.CENTER);

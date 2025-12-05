@@ -18,13 +18,14 @@ public class AnkiraInterface extends Application {
 
         Scene scene = new Scene(root, 1200, 760);
 
-
+        SongsMain music = new SongsMain();
+        Search search = new Search(music);
 
         Library libraryscroll = new Library();
 
+        PlayerBar playerBar = new PlayerBar();
 
-        Search search = new Search();
-        SongsMain music = new SongsMain();
+
 
         VBox test3 = new VBox(); //тут кароч создается новая коробочка по вертикали шобы обьединить поисковик и песенки,
         //чтобы оба засунуть по центру в наш бордерпэээээээээээээээээээйн
@@ -39,6 +40,7 @@ public class AnkiraInterface extends Application {
 
         root.setCenter(test3);
         root.setLeft(leftmenu.getPanel());
+        root.setBottom(playerBar.getMusicplayer());
 
 
         stage.setScene(scene);

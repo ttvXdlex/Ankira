@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eec84de5-4528-46b3-875d-216cbf5808d8" name="Changes" comment="Now the library displays playlists + I made it so that playlists are in the list and can be accessed from there through a cycle.">
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songlist.java" afterDir="false" />
+    <list default="true" id="eec84de5-4528-46b3-875d-216cbf5808d8" name="Changes" comment="Now songs in class with a list">
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/PlayerBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/nextplayer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/pauseplayer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/playplayer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/prevplayer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/volume.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/AnkiraInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/AnkiraInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +148,8 @@
       <workItem from="1764712473439" duration="844000" />
       <workItem from="1764769233214" duration="8546000" />
       <workItem from="1764782420234" duration="9937000" />
-      <workItem from="1764874986390" duration="1170000" />
+      <workItem from="1764874986390" duration="1307000" />
+      <workItem from="1764934265555" duration="11610000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted StackPane and fixed left menu + search bar + created class for search bar">
       <option name="closed" value="true" />
@@ -190,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764798480489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Now songs in class with a list">
+      <option name="closed" value="true" />
+      <created>1764876303778</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764876303778</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +219,8 @@
     <MESSAGE value="Moved the method for creating playlists to the class. + Added temporary placeholders instead of tracks to the main menu. + Switch between the main page and the library using buttons." />
     <MESSAGE value="Nothing special, just looks a little better." />
     <MESSAGE value="Now the library displays playlists + I made it so that playlists are in the list and can be accessed from there through a cycle." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now the library displays playlists + I made it so that playlists are in the list and can be accessed from there through a cycle." />
+    <MESSAGE value="Now songs in class with a list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now songs in class with a list" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ankira$Main.ic" NAME="Main Coverage Results" MODIFIED="1764440422327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
