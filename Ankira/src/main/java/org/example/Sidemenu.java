@@ -13,12 +13,14 @@ public class Sidemenu {
     private final BorderPane root;//
     private final VBox test3;
     private final Library libraryscroll;
+    private final PlaylistMenu playlistmenu;
     private final BorderPane panel;
 
-    public Sidemenu(BorderPane root, VBox test3, Library libraryscroll) {
+    public Sidemenu(BorderPane root, VBox test3, Library libraryscroll, PlaylistMenu playlistmenu) {
         this.root = root;
         this.test3 = test3;
         this.libraryscroll = libraryscroll;
+        this.playlistmenu = playlistmenu;
         panel = new BorderPane();
         lmenu();
     }
@@ -46,10 +48,16 @@ public class Sidemenu {
         library.getStyleClass().add("buttonslide");
         library.setOnAction(e -> root.setCenter(libraryscroll.getLibscroller())); //ну тут по обработки действия он меняет центр
         leftmenu.getChildren().addAll(home, library);
+
         for (int i = 0; i < Playlists.getPlaylisters().size(); i++) { //ухты это же ЦИИКЛ, который перебирает наш список
             PlaylistStorage playlist = Playlists.getPlaylisters().get(i);
             Button playlistbox = PlaylistsCreator.playlistsbtn(playlist.text, playlist.url);//вот тута мы создаем кнопку и
             // из списка название и картинку берем для кнопки
+            playlistbox.setOnAction(e ->{
+                playlistmenu.showMenu(playlist);
+                root.setCenter(playlistmenu.getContent());
+            });
+
             leftmenu.getChildren().add(playlistbox); //ну и добавляет что выходит на выходе в левое меню
         }
         panel.setLeft(leftmenu);

@@ -5,7 +5,6 @@
     <content url="file://$MODULE_DIR$/Ankira">
       <excludeFolder url="file://$MODULE_DIR$/Ankira/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/Ankira/build" />
-      <excludeFolder url="file://$MODULE_DIR$/Ankira/out" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -12,8 +12,10 @@ import java.util.List;
 public class SongsMain {
     private ScrollPane music; //ПРИКОООЛ существует скроллпэйн он короче автоматом скроллинг добавляет ЗАБАВНАЯ ШТУЧКА
     private final FlowPane tracks;
+    private PlayerBar playerBar;
 
-    public SongsMain() {
+    public SongsMain(PlayerBar playerBar) {
+        this.playerBar = playerBar;
         music = new ScrollPane();
         tracks = new FlowPane();
         Music(null);
@@ -26,6 +28,7 @@ public class SongsMain {
         tracks.setHgap(50); //ну тут типа растояяния между тем что внутри флоуа задает по горизонту
         tracks.setVgap(50); //тож самое по верту
         tracks.getChildren().clear();
+
         List<SongStorage> songshow;
         if (searching == null) { //ну типа если серчинг ничему не равен то он задает переменной весь список
             songshow = Songlist.getSonglist();
@@ -36,8 +39,14 @@ public class SongsMain {
 
         for (int i = 0; i < songshow.size(); i++) { //ухты это же ЦИИКЛ, который перебирает наш список
             SongStorage songlist = songshow.get(i);
+            int trackindex = i;
             VBox songbox = Songer.songscreat(songlist.name, songlist.artist, songlist.cover); //вот тута мы создаем вбокс и
             // из списка название и картинку берем для вбокса
+
+            songbox.setOnMouseClicked((event) -> {
+                playerBar.tracks(trackindex);
+            });
+
             tracks.getChildren().add(songbox); //ну и добавляет что выходит на выходе в скролпэйн библиотеки
         }
 

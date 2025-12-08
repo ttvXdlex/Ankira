@@ -18,12 +18,10 @@ public class AnkiraInterface extends Application {
 
         Scene scene = new Scene(root, 1200, 760);
 
-        SongsMain music = new SongsMain();
+        PlayerBar playerBar = new PlayerBar();
+        SongsMain music = new SongsMain(playerBar);
         Search search = new Search(music);
 
-        Library libraryscroll = new Library();
-
-        PlayerBar playerBar = new PlayerBar();
 
 
 
@@ -32,9 +30,9 @@ public class AnkiraInterface extends Application {
         test3.getChildren().addAll(search.getSearchtop(), music.getMusic()); //ну тут панятна типа ну добавляем их ну короче ты понял
         VBox.setVgrow(music.getMusic(), Priority.ALWAYS); //это короче тип очень важно, оно по вертикали дает заполнить определенный слой до конца вертикали
         // , ну тут типа слой с музыкой если ты не понял но ты понял короче
-
-
-        Sidemenu leftmenu = new Sidemenu(root, test3, libraryscroll); //НОВИНКА!!!! Тут короче добавлены приколы которые должны
+        PlaylistMenu playlistmenu = new PlaylistMenu(playerBar);
+        Library libraryscroll = new Library(root,playlistmenu);
+        Sidemenu leftmenu = new Sidemenu(root, test3, libraryscroll, playlistmenu); //НОВИНКА!!!! Тут короче добавлены приколы которые должны
         //передаться в класс SideMenu, чисто для того шобы работало переключение между Домиком и Библиотекой.
 
 
