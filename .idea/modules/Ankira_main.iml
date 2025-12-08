@@ -7,6 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/../../Ankira/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Ankira/src/main/resources" type="java-resource" />
     </content>
+    <content url="file://$MODULE_DIR$/../../Ankira/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../Ankira/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Ankira/src/main/resources" type="java-resource" />
+    </content>
     <orderEntry type="jdk" jdkName="ms-17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.openjfx:javafx-fxml:win:21" level="project" />

@@ -2,15 +2,17 @@ package org.example;
 
 
 import javafx.geometry.Pos;
+import javafx.scene.control.ContextMenu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.input.MouseButton;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 
 import java.util.List;
 
-//Тут кароче я решил создат класс де типа мы будем создавать бордер пэйн с музыкай на главном меню типа понял короче ты увидеш в приложении че
 public class SongsMain {
-    private ScrollPane music; //ПРИКОООЛ существует скроллпэйн он короче автоматом скроллинг добавляет ЗАБАВНАЯ ШТУЧКА
+    private ScrollPane music;
     private final FlowPane tracks;
     private PlayerBar playerBar;
 
@@ -42,7 +44,11 @@ public class SongsMain {
             // из списка название и картинку берем для вбокса
 
             songbox.setOnMouseClicked((event) -> {
-                playerBar.tracks(trackindex);
+                if (event.getButton() == MouseButton.PRIMARY) {
+                    playerBar.tracks(trackindex);
+                } else if (event.getButton() == MouseButton.SECONDARY) {
+                    addPlaylist(event, songlist, songbox);
+                }
             });
 
             tracks.getChildren().add(songbox); //ну и добавляет что выходит на выходе в скролпэйн библиотеки
@@ -52,6 +58,28 @@ public class SongsMain {
         songscroll.setFitToWidth(true); //корочееее он типо растягивает по ширине, иба без этого он автоматом все в лево переносит
         songscroll.setStyle("-fx-background: #2b2b2b;");
         music = songscroll;
+    }
+
+    // ну кароч это МЕЕЕЕЕЕТОД для показа меню с плаклмстами
+    private void addPlaylist(javafx.scene.input.MouseEvent event, SongStorage song, VBox songbox) {
+        ContextMenu contextMenu = new ContextMenu();
+
+        // НУ типа ну это ну тут мы вроде как создаем меню для плейлистов
+        for (int i = 0; i < Playlists.getPlaylisters().size(); i++) {
+            PlaylistStorage playlist = Playlists.getPlaylisters().get(i);
+            MenuItem menuItem = new MenuItem("Добавить в: " + playlist.text);
+
+            menuItem.setOnAction(e -> {
+                if (!playlist.tracks.contains(song)) {
+                    playlist.addtrack(song);
+                }
+            });
+
+            contextMenu.getItems().add(menuItem);
+        }
+
+        // Показываем менюшку в месте клика
+        contextMenu.show(songbox, event.getScreenX(), event.getScreenY());
     }
 
     public void searchupdated(String searching) {

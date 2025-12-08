@@ -3,10 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Ankira.iml" filepath="$PROJECT_DIR$/Ankira.iml" group="Ankira" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ankira.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Ankira.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ankira.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Ankira.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ankira_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Ankira_main.iml" group="Ankira" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ankira_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Ankira_test.iml" group="Ankira" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo.Ankira.iml" filepath="$PROJECT_DIR$/.idea/modules/demo.Ankira.iml" group="Ankira" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.Ankira.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.Ankira.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.Ankira.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.Ankira.test.iml" />
     </modules>
