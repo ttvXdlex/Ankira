@@ -25,7 +25,6 @@ public class Playlists {
         playlisters.add(playlist2);
 
         PlaylistStorage test = new PlaylistStorage("Tes2s","pl3.jpg");
-        test.addtrack(Songlist.getSonglist().get(5));
         test.addtrack(Songlist.getSonglist().get(1));
         playlisters.add(test);
     }

@@ -12,11 +12,13 @@ public class AnkiraInterface extends Application {
     @Override
     public void start(Stage stage) {
         stage.setTitle("Ankira");
-        stage.setResizable(false);
-
+        stage.setResizable(true);
+        stage.setMinWidth(950);
+        stage.setMinHeight(600);
         root.setStyle("-fx-background-color: #191919");
 
         Scene scene = new Scene(root, 1200, 760);
+
 
         PlayerBar playerBar = new PlayerBar();
         SongsMain music = new SongsMain(playerBar);

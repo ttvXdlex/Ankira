@@ -22,8 +22,6 @@ public class SongsMain {
     }
 
     private void Music(String searching) {
-        tracks.setMaxWidth(944);
-        tracks.setMaxHeight(760);
         tracks.setAlignment(Pos.CENTER);
         tracks.setHgap(50); //ну тут типа растояяния между тем что внутри флоуа задает по горизонту
         tracks.setVgap(50); //тож самое по верту
