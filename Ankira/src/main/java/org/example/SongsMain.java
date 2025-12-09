@@ -67,7 +67,7 @@ public class SongsMain {
         // НУ типа ну это ну тут мы вроде как создаем меню для плейлистов
         for (int i = 0; i < Playlists.getPlaylisters().size(); i++) {
             PlaylistStorage playlist = Playlists.getPlaylisters().get(i);
-            MenuItem menuItem = new MenuItem("Добавить в: " + playlist.text);
+            MenuItem menuItem = new MenuItem("Add in: " + playlist.text);
 
             menuItem.setOnAction(e -> {
                 if (!playlist.tracks.contains(song)) {

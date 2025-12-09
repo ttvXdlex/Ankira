@@ -5,13 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eec84de5-4528-46b3-875d-216cbf5808d8" name="Changes" comment="Now songs in class with a list">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Ankira.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Ankira.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Ankira_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Ankira_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Ankira_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Ankira_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/demo.Ankira.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/BFM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Bk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Burning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Dd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/FEIN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Igdn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Iris_Out.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Iwant.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Marti.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Rule.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/SOSO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/Wmt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/XXL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/inthepool.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/pesnya.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/images/ЧСВ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/BFM.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/Burning.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/FEIN.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/Igdn.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/Iwant.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/RuLe.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/Waste_My_Time.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ankira/src/main/resources/music/pesnya.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Playlists.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Playlists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/Songlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ankira/src/main/java/org/example/SongsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ankira/src/main/resources/images/pl2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +147,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tarav\Downloads\demo\Ankira\Ankira\src\main\resources\music" />
+      <recent name="C:\Users\tarav\Downloads\demo\Ankira\Ankira\src\main\resources\images" />
       <recent name="C:\Users\playf\Downloads\Ankira\Ankira\src\main\resources\music" />
       <recent name="C:\Users\playf\Downloads\Ankira\Ankira\src\main\resources\images" />
     </key>

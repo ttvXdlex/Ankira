@@ -8,13 +8,21 @@ public class Songlist {
     static List<SongStorage> songlists = new ArrayList<>();
 
     static {
-        songlists.add(new SongStorage("XXL", "5opka, MellSher", "track1.jpg", "music/XXL.mp3"));
-        songlists.add(new SongStorage("IRIS OUT", "Kenshi Yonezu", "fav.png", "music/IRISOUT.mp3"));
-        songlists.add(new SongStorage("So so brooks", "so so,Dj os", "fav.png", "music/so_so_brooks.mp3"));
-        songlists.add(new SongStorage("ЧСВ", "Lida feat(Cерега пират) ", "fav.png", "music/ЧСВ.mp3"));
-        songlists.add(new SongStorage("In the pool", "Kensuki ushio", "fav.png", "music/chainsaw_man.mp3"));
-        songlists.add(new SongStorage("Broken games","Fzmz", "fav.png", "music/Broken_games.mp3"));
-        songlists.add(new SongStorage("Danger danger", "Fzmz", "fav.png", "music/Fzmz Danger Dange.mp4"));
+        songlists.add(new SongStorage("XXL", "5opka, MellSher", "XXL.jpg", "music/XXL.mp3"));
+        songlists.add(new SongStorage("IRIS OUT", "Kenshi Yonezu", "Iris_Out.png", "music/IRISOUT.mp3"));
+        songlists.add(new SongStorage("So so brooks", "so so,Dj os", "SOSO.jpg", "music/so_so_brooks.mp3"));
+        songlists.add(new SongStorage("ЧСВ", "Lida feat(Cерега пират) ", "ЧСВ.jpg", "music/ЧСВ.mp3"));
+        songlists.add(new SongStorage("In the pool", "Kensuki ushio", "inthepool.jpg", "music/chainsaw_man.mp3"));
+        songlists.add(new SongStorage("Broken games","Fzmz", "Bk.jpg", "music/Broken_games.mp3"));
+        songlists.add(new SongStorage("Danger danger", "Fzmz", "Dd.jpg", "music/Fzmz Danger Dange.mp4"));
+        songlists.add(new SongStorage("Философская песня о пуле","Egor Letov", "pesnya.jpg", "music/pesnya.mp3"));
+        songlists.add(new SongStorage("Waste my time","OliverTree", "Wmt.png", "music/Waste_My_Time.mp3"));
+        songlists.add(new SongStorage("FEIN","Travis Scott, Playboy Carti", "FEIN.jpg", "music/FEIN.mp3"));
+        songlists.add(new SongStorage("BFM","Asteria, kets4eki, Britney Manson", "BFM.jpg", "music/BFM.mp3"));
+        songlists.add(new SongStorage("Rule","Ado", "Rule.jpg", "music/RuLe.mp3"));
+        songlists.add(new SongStorage("Its Going Down Now","ATLUS", "Igdn.jpg", "music/Igdn.mp3"));
+        songlists.add(new SongStorage("Burning","Hitsujibungaku", "Burning.png", "music/Burning.mp3"));
+        songlists.add(new SongStorage("I Want Things To Be Beautiful "," Devi McCallion", "Iwant.jpg", "music/Iwant.mp3"));
     }
 
     public static List<SongStorage> search(String searching) { //здесь метод работующий со списком
