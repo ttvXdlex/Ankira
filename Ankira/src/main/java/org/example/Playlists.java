@@ -15,12 +15,6 @@ public class Playlists {
         PlaylistStorage favourite = new PlaylistStorage("Favourite","fav.png"); //юзаю хранилище шобы вписывать название и юрл картинки
         favourite.addtrack(Songlist.getSonglist().get(0));
         favourite.addtrack(Songlist.getSonglist().get(2));
-        favourite.addtrack(Songlist.getSonglist().get(1));
-        favourite.addtrack(Songlist.getSonglist().get(4));
-        favourite.addtrack(Songlist.getSonglist().get(5));
-        favourite.addtrack(Songlist.getSonglist().get(6));
-        favourite.addtrack(Songlist.getSonglist().get(10));
-        favourite.addtrack(Songlist.getSonglist().get(12));
         playlisters.add(favourite);
 
         PlaylistStorage playlist1 = new PlaylistStorage("Playlist","pl1.jpg");
